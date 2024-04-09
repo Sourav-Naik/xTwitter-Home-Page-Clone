@@ -1,0 +1,1182 @@
+<!DOCTYPE html>
+<html lang="en" style="scrollbar-color: #666 #333">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>X-clone</title>
+    <link rel="stylesheet" href="./css/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body class="bg-black text-white container mx-auto flex justify-center w-fit">
+    <div class="flex flex-col-reverse justify-center xsm:flex-row">
+      <!-- first panel -->
+      <div
+        class="first flex flex-col justify-between w-full items-center bg-dark fixed bottom-0 border-t bg-black border-gray-700 overflow-x-clip xsm:min-w-20 xsm:w-fit xsm:border-hidden xsm:h-screen xsm:sticky xsm:top-0 xl:px-4"
+        style="scrollbar-color: #666 #333"
+      >
+        <!-- status -->
+        <ul
+          class="flex xsm:flex-col w-full justify-evenly text-xl items-center xl:items-start xsm:space-y-3"
+        >
+          <li
+            class="hidden hover:bg-gray-900 hover:cursor-pointer p-3 hover:rounded-full xsm:flex items-center justify-start mt-1"
+          >
+            <i class="fa-brands fa-x-twitter text-3xl"></i>
+          </li>
+          <li
+            class="hover:bg-gray-900 hover:cursor-pointer p-2 hover:rounded-full flex items-center justify-start"
+          >
+            <span class="material-symbols-outlined" style="font-size: 33px">
+              home
+            </span>
+            <span class="hidden xl:block xl:ms-6 xl:me-4">Home</span>
+          </li>
+          <li
+            class="hover:bg-gray-900 hover:cursor-pointer p-2 hover:rounded-full flex items-center justify-start"
+          >
+            <span class="material-symbols-outlined" style="font-size: 32px"
+              >search</span
+            >
+            <span class="hidden xl:block xl:ms-6 xl:me-4">Explore</span>
+          </li>
+          <li
+            class="hover:bg-gray-900 hover:cursor-pointer p-2 hover:rounded-full flex items-center justify-start"
+          >
+            <span class="material-symbols-outlined" style="font-size: 31px"
+              >notifications</span
+            >
+            <span class="hidden xl:block xl:ms-6 xl:me-4">Notifications</span>
+          </li>
+          <li
+            class="hover:bg-gray-900 hover:cursor-pointer p-2 hover:rounded-full flex items-center justify-start"
+          >
+            <span class="material-symbols-outlined" style="font-size: 30px"
+              >message</span
+            >
+            <span class="hidden xl:block xl:ms-6 xl:me-4">Message</span>
+          </li>
+          <li
+            class="hover:bg-gray-900 hover:cursor-pointer p-2 hover:rounded-full hidden xsm:flex items-center justify-start"
+          >
+            <span class="material-symbols-outlined" style="font-size: 29px">
+              indeterminate_check_box
+            </span>
+            <span class="hidden xl:block xl:ms-6 xl:me-4">Grok</span>
+          </li>
+          <li
+            class="hover:bg-gray-900 hover:cursor-pointer p-2 hover:rounded-full hidden xsm:flex items-center justify-start"
+          >
+            <span class="material-symbols-outlined" style="font-size: 28px">
+              list_alt
+            </span>
+            <span class="hidden xl:block xl:ms-6 xl:me-4">Lists</span>
+          </li>
+          <li
+            class="hover:bg-gray-900 hover:cursor-pointer p-2 hover:rounded-full flex items-center justify-start"
+          >
+            <span class="material-symbols-outlined" style="font-size: 27px">
+              bookmarks
+            </span>
+            <span class="hidden xl:block xl:ms-6 xl:me-4">Bookmarks</span>
+          </li>
+          <li
+            class="hover:bg-gray-900 hover:cursor-pointer p-2 hover:rounded-full hidden xsm:flex items-center justify-start"
+          >
+            <span class="material-symbols-outlined" style="font-size: 26px">
+              Group
+            </span>
+            <span class="hidden xl:block xl:ms-6 xl:me-4">Communities</span>
+          </li>
+          <li
+            class="hover:bg-gray-900 hover:cursor-pointer p-2 hover:rounded-full hidden xsm:flex items-center justify-start"
+          >
+            <i
+              class="fa-brands fa-x-twitter ms-1 p-0"
+              style="font-size: 22px"
+            ></i>
+            <span class="hidden xl:block xl:ms-6 xl:me-4">Premium</span>
+          </li>
+          <li
+            class="hover:bg-gray-900 hover:cursor-pointer p-2 hover:rounded-full hidden xsm:flex items-center justify-start"
+          >
+            <span class="material-symbols-outlined" style="font-size: 26px">
+              person
+            </span>
+            <span class="hidden xl:block xl:ms-6 xl:me-4">Profile</span>
+          </li>
+          <li
+            class="hover:bg-gray-900 hover:cursor-pointer p-2 hover:rounded-full hidden xsm:flex items-center justify-start"
+          >
+            <span class="material-symbols-outlined" style="font-size: 25px"
+              >pending</span
+            >
+            <span class="hidden xl:block xl:ms-6 xl:me-4">More</span>
+          </li>
+          <li class="hidden xsm:flex button text-center my-3">
+            <button
+              class="hidden xl:block bg-[#1d9bf0] px-24 text-xl rounded-full py-3 hover:bg-opacity-85"
+            >
+              Post
+            </button>
+            <button
+              class="xl:hidden bg-[#1d9bf0] p-3 rounded-full text-white leading-3 hover:bg-opacity-85"
+            >
+              <span class="material-symbols-outlined" style="font-size: 30px">
+                edit
+              </span>
+            </button>
+          </li>
+        </ul>
+
+        <!-- profile -->
+        <div
+          class="hover:bg-gray-800 cursor-pointer mb-5 p-2 rounded-full hidden xsm:flex justify-center xl:justify-between xl:items-center w-14 xl:w-full"
+        >
+          <div class="flex items-center">
+            <div>
+              <img
+                class="w-10 h-10 rounded-full"
+                src="https://pbs.twimg.com/profile_images/1776884661202935809/kIh7r5ak_normal.jpg"
+                alt="DP"
+              />
+            </div>
+            <div class="ms-2 p2 hidden xl:block">
+              <div class="font-semibold">Sourav</div>
+              <div class="text-gray-500">@86sourav11</div>
+            </div>
+          </div>
+          <div class="hidden xl:block">
+            <span
+              class="material-symbols-outlined me-5"
+              style="font-size: 22px"
+            >
+              more_horiz
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- second panel -->
+      <div
+        class="second flex flex-col md:min-w-[598px] max-w-[598px] xl:max-w-[610px]"
+      >
+        <!-- profile panel for mobile -->
+        <div class="flex xsm:hidden p-2 justify-between items-center">
+          <img
+            class="w-6 h-6 rounded-full object-cover"
+            src="https://pbs.twimg.com/profile_images/1776884661202935809/kIh7r5ak_normal.jpg"
+            alt="DP"
+          />
+          <i class="fa-brands fa-x-twitter text-2xl"></i>
+          <span class="material-symbols-outlined" style="font-size: 20px">
+            settings
+          </span>
+        </div>
+        <!-- for you and follwing -->
+        <div class="flex sticky top-0 bg-black bg-opacity-85 w-full">
+          <div
+            class="flex items-center border-b xsm:border-x border-gray-700 w-full"
+          >
+            <div class="w-full hover:bg-gray-900 justify-center flex">
+              <div
+                class="border-b-4 py-3 border-b-blue-500 font-semibold cursor-pointer"
+              >
+                For you
+              </div>
+            </div>
+            <div class="w-full hover:bg-gray-900 justify-center flex">
+              <div class="text-gray-500 py-3 cursor-pointer">Following</div>
+            </div>
+            <div class="hidden xsm:block">
+              <span
+                class="material-symbols-outlined mx-2 p-2 rounded-full hover:bg-gray-900 cursor-pointer"
+                style="font-size: 20px"
+              >
+                settings
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- staus post -->
+        <div
+          class="border-b hidden xsm:border-x border-gray-700 px-4 xsm:flex w-full"
+        >
+          <div class="me-2 py-3">
+            <img
+              class="w-11 h-10 rounded-full object-cover"
+              src="https://pbs.twimg.com/profile_images/1776884661202935809/kIh7r5ak_normal.jpg"
+              alt="DP"
+            />
+          </div>
+          <div class="w-full">
+            <input
+              type="placeholder"
+              class="text-[21px] py-3 bg-black placeholder-gray-500 focus:border-transparent focus:outline-none"
+              placeholder="What is happening?!"
+            />
+
+            <div class="flex justify-between items-center py-[11px]">
+              <div class="text-blue-400 flex items-center">
+                <span
+                  class="material-symbols-outlined p-2 hover:bg-[#2099eb30] rounded-full"
+                  style="font-size: 20px"
+                >
+                  imagesmode
+                </span>
+                <span
+                  class="material-symbols-outlined p-2 hover:bg-[#2099eb30] rounded-full"
+                  style="font-size: 20px"
+                >
+                  gif_box
+                </span>
+                <span
+                  class="material-symbols-outlined p-2 hover:bg-[#2099eb30] rounded-full"
+                  style="font-size: 20px"
+                >
+                  event_list
+                </span>
+                <span
+                  class="material-symbols-outlined p-2 hover:bg-[#2099eb30] rounded-full"
+                  style="font-size: 20px"
+                >
+                  sentiment_satisfied
+                </span>
+                <span
+                  class="material-symbols-outlined p-2 hover:bg-[#2099eb30] rounded-full"
+                  style="font-size: 20px"
+                >
+                  calendar_clock
+                </span>
+                <span
+                  class="material-symbols-outlined p-2rounded-full opacity-60 p-2"
+                  style="font-size: 20px"
+                >
+                  location_on
+                </span>
+              </div>
+              <div
+                class="font-semibold bg-blue-500 px-4 py-[6px] rounded-full opacity-60"
+              >
+                Post
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- component-1 -->
+        <div
+          class="border-b xsm:border-x border-gray-700 flex px-4 w-full text-sm xsm:text-base"
+        >
+          <div class="w-10 me-2 pt-3 min-w-10">
+            <img
+              class="w-10 h-10 object-cover rounded-full"
+              src="https://pbs.twimg.com/profile_images/1134090740592627712/0Fp-U5-p_bigger.png"
+              alt="..."
+            />
+          </div>
+          <div class="flex flex-col">
+            <div class="flex justify-between w-full h-fit">
+              <div class="flex items-start justify-start pt-2 h-fit">
+                <div class="font-semibold hover:underline">Narender Modi</div>
+                <span
+                  class="material-symbols-outlined text-blue-500 mx-[3px] pt-[2px]"
+                  style="font-size: 19px"
+                >
+                  verified
+                </span>
+                <span class="text-gray-500">@narendramodi · 5h</span>
+              </div>
+              <div
+                class="mt-1 flex items-start rounded-full text-gray-500 hover:bg-[#2099eb30] hover:text-[#2099eb] h-fit p-1 leading-3 xsm:leading-5 xsm:pb-[6px] xsm:px-[5px] text-2xl font-bold"
+              >
+                <span class="hidden xsm:block">···</span>
+                <span class="xsm:hidden"
+                  ><span class="material-symbols-outlined">
+                    more_horiz
+                  </span></span
+                >
+              </div>
+            </div>
+            <div class="text-sm text-gray-300">
+              छत्रपति शिवाजी महाराज के सपनों का भारत बनाने के लिए हम दिन-रात
+              मेहनत कर रहे हैं। चंद्रपुर समेत पूरे महाराष्ट्र में भाजपा-एनडीए के
+              कर्मठ उम्मीदवारों को विजयी बनाने के लिए मेरे परिवारजनों में
+              अभूतपूर्व उत्साह है।
+            </div>
+            <div class="pt-3 pb-2">
+              <img
+                src="https://pbs.twimg.com/media/GKo4SEyXIAEPEul?format=jpg&name=360x360"
+                alt="..."
+                class="w-auto xsm:min-w-full xsm:max-w-full rounded-2xl object-cover"
+              />
+            </div>
+            <div
+              class="flex justify-between leading-3 text-gray-500 items-center mb-1 text-xs xsm:text-sm"
+            >
+              <div
+                class="flex items-center hover:text-[#2099eb] cursor-pointer"
+              >
+                <span
+                  class="material-symbols-outlined xsm:p-2 rounded-full hover:bg-[#2099eb30] hover:text-[#2099eb]"
+                  style="font-size: 20px"
+                >
+                  mode_comment </span
+                >1.5k
+              </div>
+              <div
+                class="flex items-center hover:text-[#00ba7c] cursor-pointer"
+              >
+                <span
+                  class="material-symbols-outlined xsm:p-2 rounded-full hover:bg-[#00ba7c30] hover:text-[#00ba7c]"
+                  style="font-size: 20px"
+                >
+                  cached </span
+                >5.4k
+              </div>
+              <div
+                class="flex items-center hover:text-[#f91880] cursor-pointer"
+              >
+                <span
+                  class="material-symbols-outlined xsm:p-2 rounded-full hover:bg-[#f9188030] hover:text-[#f91880]"
+                  style="font-size: 20px"
+                >
+                  favorite </span
+                >12.4k
+              </div>
+              <div
+                class="flex items-center hover:text-[#2099eb] cursor-pointer"
+              >
+                <span
+                  class="material-symbols-outlined xsm:p-2 rounded-full hover:bg-[#2099eb30] hover:text-[#2099eb]"
+                  style="font-size: 20px"
+                >
+                  bar_chart_4_bars </span
+                >109.3k
+              </div>
+              <div class="flex items-center">
+                <span
+                  class="material-symbols-outlined xsm:p-2 rounded-full hover:bg-[#2099eb30] hover:text-[#2099eb] cursor-pointer"
+                  style="font-size: 20px"
+                >
+                  bookmark
+                </span>
+                <span
+                  class="material-symbols-outlined xsm:p-2 rounded-full hover:bg-[#2099eb30] hover:text-[#2099eb] cursor-pointer"
+                  style="font-size: 22px"
+                >
+                  upload
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- component-2 -->
+        <div
+          class="border-b xsm:border-x border-gray-700 flex px-4 w-full text-sm xsm:text-base"
+        >
+          <div class="w-10 me-2 pt-3 min-w-10">
+            <img
+              class="w-10 h-10 object-cover rounded-full"
+              src="https://pbs.twimg.com/profile_images/1134090740592627712/0Fp-U5-p_bigger.png"
+              alt="..."
+            />
+          </div>
+          <div class="flex flex-col">
+            <div class="flex justify-between w-full h-fit">
+              <div class="flex items-start justify-start pt-2 h-fit">
+                <div class="font-semibold hover:underline">Narender Modi</div>
+                <span
+                  class="material-symbols-outlined text-blue-500 mx-[3px] pt-[2px]"
+                  style="font-size: 19px"
+                >
+                  verified
+                </span>
+                <span class="text-gray-500">@narendramodi · 5h</span>
+              </div>
+              <div
+                class="mt-1 flex items-start rounded-full text-gray-500 hover:bg-[#2099eb30] hover:text-[#2099eb] h-fit p-1 leading-3 xsm:leading-5 xsm:pb-[6px] xsm:px-[5px] text-2xl font-bold"
+              >
+                <span class="hidden xsm:block">···</span>
+                <span class="xsm:hidden"
+                  ><span class="material-symbols-outlined">
+                    more_horiz
+                  </span></span
+                >
+              </div>
+            </div>
+            <div class="text-sm text-gray-300">
+              छत्रपति शिवाजी महाराज के सपनों का भारत बनाने के लिए हम दिन-रात
+              मेहनत कर रहे हैं। चंद्रपुर समेत पूरे महाराष्ट्र में भाजपा-एनडीए के
+              कर्मठ उम्मीदवारों को विजयी बनाने के लिए मेरे परिवारजनों में
+              अभूतपूर्व उत्साह है।
+            </div>
+            <div class="pt-3 pb-2">
+              <img
+                src="https://pbs.twimg.com/media/GKo4SEyXIAEPEul?format=jpg&name=360x360"
+                alt="..."
+                class="w-auto xsm:min-w-full xsm:max-w-full rounded-2xl object-cover"
+              />
+            </div>
+            <div
+              class="flex justify-between leading-3 text-gray-500 items-center mb-1 text-xs xsm:text-sm"
+            >
+              <div
+                class="flex items-center hover:text-[#2099eb] cursor-pointer"
+              >
+                <span
+                  class="material-symbols-outlined xsm:p-2 rounded-full hover:bg-[#2099eb30] hover:text-[#2099eb]"
+                  style="font-size: 20px"
+                >
+                  mode_comment </span
+                >1.5k
+              </div>
+              <div
+                class="flex items-center hover:text-[#00ba7c] cursor-pointer"
+              >
+                <span
+                  class="material-symbols-outlined xsm:p-2 rounded-full hover:bg-[#00ba7c30] hover:text-[#00ba7c]"
+                  style="font-size: 20px"
+                >
+                  cached </span
+                >5.4k
+              </div>
+              <div
+                class="flex items-center hover:text-[#f91880] cursor-pointer"
+              >
+                <span
+                  class="material-symbols-outlined xsm:p-2 rounded-full hover:bg-[#f9188030] hover:text-[#f91880]"
+                  style="font-size: 20px"
+                >
+                  favorite </span
+                >12.4k
+              </div>
+              <div
+                class="flex items-center hover:text-[#2099eb] cursor-pointer"
+              >
+                <span
+                  class="material-symbols-outlined xsm:p-2 rounded-full hover:bg-[#2099eb30] hover:text-[#2099eb]"
+                  style="font-size: 20px"
+                >
+                  bar_chart_4_bars </span
+                >109.3k
+              </div>
+              <div class="flex items-center">
+                <span
+                  class="material-symbols-outlined xsm:p-2 rounded-full hover:bg-[#2099eb30] hover:text-[#2099eb] cursor-pointer"
+                  style="font-size: 20px"
+                >
+                  bookmark
+                </span>
+                <span
+                  class="material-symbols-outlined xsm:p-2 rounded-full hover:bg-[#2099eb30] hover:text-[#2099eb] cursor-pointer"
+                  style="font-size: 22px"
+                >
+                  upload
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- component-3 -->
+        <div
+          class="border-b xsm:border-x border-gray-700 flex px-4 w-full text-sm xsm:text-base"
+        >
+          <div class="w-10 me-2 pt-3 min-w-10">
+            <img
+              class="w-10 h-10 object-cover rounded-full"
+              src="https://pbs.twimg.com/profile_images/1134090740592627712/0Fp-U5-p_bigger.png"
+              alt="..."
+            />
+          </div>
+          <div class="flex flex-col">
+            <div class="flex justify-between w-full h-fit">
+              <div class="flex items-start justify-start pt-2 h-fit">
+                <div class="font-semibold hover:underline">Narender Modi</div>
+                <span
+                  class="material-symbols-outlined text-blue-500 mx-[3px] pt-[2px]"
+                  style="font-size: 19px"
+                >
+                  verified
+                </span>
+                <span class="text-gray-500">@narendramodi · 5h</span>
+              </div>
+              <div
+                class="mt-1 flex items-start rounded-full text-gray-500 hover:bg-[#2099eb30] hover:text-[#2099eb] h-fit p-1 leading-3 xsm:leading-5 xsm:pb-[6px] xsm:px-[5px] text-2xl font-bold"
+              >
+                <span class="hidden xsm:block">···</span>
+                <span class="xsm:hidden"
+                  ><span class="material-symbols-outlined">
+                    more_horiz
+                  </span></span
+                >
+              </div>
+            </div>
+            <div class="text-sm text-gray-300">
+              छत्रपति शिवाजी महाराज के सपनों का भारत बनाने के लिए हम दिन-रात
+              मेहनत कर रहे हैं। चंद्रपुर समेत पूरे महाराष्ट्र में भाजपा-एनडीए के
+              कर्मठ उम्मीदवारों को विजयी बनाने के लिए मेरे परिवारजनों में
+              अभूतपूर्व उत्साह है।
+            </div>
+            <div class="pt-3 pb-2">
+              <img
+                src="https://pbs.twimg.com/media/GKo4SEyXIAEPEul?format=jpg&name=360x360"
+                alt="..."
+                class="w-auto xsm:min-w-full xsm:max-w-full rounded-2xl object-cover"
+              />
+            </div>
+            <div
+              class="flex justify-between leading-3 text-gray-500 items-center mb-1 text-xs xsm:text-sm"
+            >
+              <div
+                class="flex items-center hover:text-[#2099eb] cursor-pointer"
+              >
+                <span
+                  class="material-symbols-outlined xsm:p-2 rounded-full hover:bg-[#2099eb30] hover:text-[#2099eb]"
+                  style="font-size: 20px"
+                >
+                  mode_comment </span
+                >1.5k
+              </div>
+              <div
+                class="flex items-center hover:text-[#00ba7c] cursor-pointer"
+              >
+                <span
+                  class="material-symbols-outlined xsm:p-2 rounded-full hover:bg-[#00ba7c30] hover:text-[#00ba7c]"
+                  style="font-size: 20px"
+                >
+                  cached </span
+                >5.4k
+              </div>
+              <div
+                class="flex items-center hover:text-[#f91880] cursor-pointer"
+              >
+                <span
+                  class="material-symbols-outlined xsm:p-2 rounded-full hover:bg-[#f9188030] hover:text-[#f91880]"
+                  style="font-size: 20px"
+                >
+                  favorite </span
+                >12.4k
+              </div>
+              <div
+                class="flex items-center hover:text-[#2099eb] cursor-pointer"
+              >
+                <span
+                  class="material-symbols-outlined xsm:p-2 rounded-full hover:bg-[#2099eb30] hover:text-[#2099eb]"
+                  style="font-size: 20px"
+                >
+                  bar_chart_4_bars </span
+                >109.3k
+              </div>
+              <div class="flex items-center">
+                <span
+                  class="material-symbols-outlined xsm:p-2 rounded-full hover:bg-[#2099eb30] hover:text-[#2099eb] cursor-pointer"
+                  style="font-size: 20px"
+                >
+                  bookmark
+                </span>
+                <span
+                  class="material-symbols-outlined xsm:p-2 rounded-full hover:bg-[#2099eb30] hover:text-[#2099eb] cursor-pointer"
+                  style="font-size: 22px"
+                >
+                  upload
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- component-4 -->
+        <div
+          class="border-b xsm:border-x border-gray-700 flex px-4 w-full text-sm xsm:text-base"
+        >
+          <div class="w-10 me-2 pt-3 min-w-10">
+            <img
+              class="w-10 h-10 object-cover rounded-full"
+              src="https://pbs.twimg.com/profile_images/1134090740592627712/0Fp-U5-p_bigger.png"
+              alt="..."
+            />
+          </div>
+          <div class="flex flex-col">
+            <div class="flex justify-between w-full h-fit">
+              <div class="flex items-start justify-start pt-2 h-fit">
+                <div class="font-semibold hover:underline">Narender Modi</div>
+                <span
+                  class="material-symbols-outlined text-blue-500 mx-[3px] pt-[2px]"
+                  style="font-size: 19px"
+                >
+                  verified
+                </span>
+                <span class="text-gray-500">@narendramodi · 5h</span>
+              </div>
+              <div
+                class="mt-1 flex items-start rounded-full text-gray-500 hover:bg-[#2099eb30] hover:text-[#2099eb] h-fit p-1 leading-3 xsm:leading-5 xsm:pb-[6px] xsm:px-[5px] text-2xl font-bold"
+              >
+                <span class="hidden xsm:block">···</span>
+                <span class="xsm:hidden"
+                  ><span class="material-symbols-outlined">
+                    more_horiz
+                  </span></span
+                >
+              </div>
+            </div>
+            <div class="text-sm text-gray-300">
+              छत्रपति शिवाजी महाराज के सपनों का भारत बनाने के लिए हम दिन-रात
+              मेहनत कर रहे हैं। चंद्रपुर समेत पूरे महाराष्ट्र में भाजपा-एनडीए के
+              कर्मठ उम्मीदवारों को विजयी बनाने के लिए मेरे परिवारजनों में
+              अभूतपूर्व उत्साह है।
+            </div>
+            <div class="pt-3 pb-2">
+              <img
+                src="https://pbs.twimg.com/media/GKo4SEyXIAEPEul?format=jpg&name=360x360"
+                alt="..."
+                class="w-auto xsm:min-w-full xsm:max-w-full rounded-2xl object-cover"
+              />
+            </div>
+            <div
+              class="flex justify-between leading-3 text-gray-500 items-center mb-1 text-xs xsm:text-sm"
+            >
+              <div
+                class="flex items-center hover:text-[#2099eb] cursor-pointer"
+              >
+                <span
+                  class="material-symbols-outlined xsm:p-2 rounded-full hover:bg-[#2099eb30] hover:text-[#2099eb]"
+                  style="font-size: 20px"
+                >
+                  mode_comment </span
+                >1.5k
+              </div>
+              <div
+                class="flex items-center hover:text-[#00ba7c] cursor-pointer"
+              >
+                <span
+                  class="material-symbols-outlined xsm:p-2 rounded-full hover:bg-[#00ba7c30] hover:text-[#00ba7c]"
+                  style="font-size: 20px"
+                >
+                  cached </span
+                >5.4k
+              </div>
+              <div
+                class="flex items-center hover:text-[#f91880] cursor-pointer"
+              >
+                <span
+                  class="material-symbols-outlined xsm:p-2 rounded-full hover:bg-[#f9188030] hover:text-[#f91880]"
+                  style="font-size: 20px"
+                >
+                  favorite </span
+                >12.4k
+              </div>
+              <div
+                class="flex items-center hover:text-[#2099eb] cursor-pointer"
+              >
+                <span
+                  class="material-symbols-outlined xsm:p-2 rounded-full hover:bg-[#2099eb30] hover:text-[#2099eb]"
+                  style="font-size: 20px"
+                >
+                  bar_chart_4_bars </span
+                >109.3k
+              </div>
+              <div class="flex items-center">
+                <span
+                  class="material-symbols-outlined xsm:p-2 rounded-full hover:bg-[#2099eb30] hover:text-[#2099eb] cursor-pointer"
+                  style="font-size: 20px"
+                >
+                  bookmark
+                </span>
+                <span
+                  class="material-symbols-outlined xsm:p-2 rounded-full hover:bg-[#2099eb30] hover:text-[#2099eb] cursor-pointer"
+                  style="font-size: 22px"
+                >
+                  upload
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- component-5 -->
+        <div
+          class="border-b xsm:border-x border-gray-700 flex px-4 w-full text-sm xsm:text-base"
+        >
+          <div class="w-10 me-2 pt-3 min-w-10">
+            <img
+              class="w-10 h-10 object-cover rounded-full"
+              src="https://pbs.twimg.com/profile_images/1134090740592627712/0Fp-U5-p_bigger.png"
+              alt="..."
+            />
+          </div>
+          <div class="flex flex-col">
+            <div class="flex justify-between w-full h-fit">
+              <div class="flex items-start justify-start pt-2 h-fit">
+                <div class="font-semibold hover:underline">Narender Modi</div>
+                <span
+                  class="material-symbols-outlined text-blue-500 mx-[3px] pt-[2px]"
+                  style="font-size: 19px"
+                >
+                  verified
+                </span>
+                <span class="text-gray-500">@narendramodi · 5h</span>
+              </div>
+              <div
+                class="mt-1 flex items-start rounded-full text-gray-500 hover:bg-[#2099eb30] hover:text-[#2099eb] h-fit p-1 leading-3 xsm:leading-5 xsm:pb-[6px] xsm:px-[5px] text-2xl font-bold"
+              >
+                <span class="hidden xsm:block">···</span>
+                <span class="xsm:hidden"
+                  ><span class="material-symbols-outlined">
+                    more_horiz
+                  </span></span
+                >
+              </div>
+            </div>
+            <div class="text-sm text-gray-300">
+              छत्रपति शिवाजी महाराज के सपनों का भारत बनाने के लिए हम दिन-रात
+              मेहनत कर रहे हैं। चंद्रपुर समेत पूरे महाराष्ट्र में भाजपा-एनडीए के
+              कर्मठ उम्मीदवारों को विजयी बनाने के लिए मेरे परिवारजनों में
+              अभूतपूर्व उत्साह है।
+            </div>
+            <div class="pt-3 pb-2">
+              <img
+                src="https://pbs.twimg.com/media/GKo4SEyXIAEPEul?format=jpg&name=360x360"
+                alt="..."
+                class="w-auto xsm:min-w-full xsm:max-w-full rounded-2xl object-cover"
+              />
+            </div>
+            <div
+              class="flex justify-between leading-3 text-gray-500 items-center mb-1 text-xs xsm:text-sm"
+            >
+              <div
+                class="flex items-center hover:text-[#2099eb] cursor-pointer"
+              >
+                <span
+                  class="material-symbols-outlined xsm:p-2 rounded-full hover:bg-[#2099eb30] hover:text-[#2099eb]"
+                  style="font-size: 20px"
+                >
+                  mode_comment </span
+                >1.5k
+              </div>
+              <div
+                class="flex items-center hover:text-[#00ba7c] cursor-pointer"
+              >
+                <span
+                  class="material-symbols-outlined xsm:p-2 rounded-full hover:bg-[#00ba7c30] hover:text-[#00ba7c]"
+                  style="font-size: 20px"
+                >
+                  cached </span
+                >5.4k
+              </div>
+              <div
+                class="flex items-center hover:text-[#f91880] cursor-pointer"
+              >
+                <span
+                  class="material-symbols-outlined xsm:p-2 rounded-full hover:bg-[#f9188030] hover:text-[#f91880]"
+                  style="font-size: 20px"
+                >
+                  favorite </span
+                >12.4k
+              </div>
+              <div
+                class="flex items-center hover:text-[#2099eb] cursor-pointer"
+              >
+                <span
+                  class="material-symbols-outlined xsm:p-2 rounded-full hover:bg-[#2099eb30] hover:text-[#2099eb]"
+                  style="font-size: 20px"
+                >
+                  bar_chart_4_bars </span
+                >109.3k
+              </div>
+              <div class="flex items-center">
+                <span
+                  class="material-symbols-outlined xsm:p-2 rounded-full hover:bg-[#2099eb30] hover:text-[#2099eb] cursor-pointer"
+                  style="font-size: 20px"
+                >
+                  bookmark
+                </span>
+                <span
+                  class="material-symbols-outlined xsm:p-2 rounded-full hover:bg-[#2099eb30] hover:text-[#2099eb] cursor-pointer"
+                  style="font-size: 22px"
+                >
+                  upload
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- component-6 -->
+        <div
+          class="border-b xsm:border-x border-gray-700 flex px-4 w-full text-sm xsm:text-base"
+        >
+          <div class="w-10 me-2 pt-3 min-w-10">
+            <img
+              class="w-10 h-10 object-cover rounded-full"
+              src="https://pbs.twimg.com/profile_images/1134090740592627712/0Fp-U5-p_bigger.png"
+              alt="..."
+            />
+          </div>
+          <div class="flex flex-col">
+            <div class="flex justify-between w-full h-fit">
+              <div class="flex items-start justify-start pt-2 h-fit">
+                <div class="font-semibold hover:underline">Narender Modi</div>
+                <span
+                  class="material-symbols-outlined text-blue-500 mx-[3px] pt-[2px]"
+                  style="font-size: 19px"
+                >
+                  verified
+                </span>
+                <span class="text-gray-500">@narendramodi · 5h</span>
+              </div>
+              <div
+                class="mt-1 flex items-start rounded-full text-gray-500 hover:bg-[#2099eb30] hover:text-[#2099eb] h-fit p-1 leading-3 xsm:leading-5 xsm:pb-[6px] xsm:px-[5px] text-2xl font-bold"
+              >
+                <span class="hidden xsm:block">···</span>
+                <span class="xsm:hidden"
+                  ><span class="material-symbols-outlined">
+                    more_horiz
+                  </span></span
+                >
+              </div>
+            </div>
+            <div class="text-sm text-gray-300">
+              छत्रपति शिवाजी महाराज के सपनों का भारत बनाने के लिए हम दिन-रात
+              मेहनत कर रहे हैं। चंद्रपुर समेत पूरे महाराष्ट्र में भाजपा-एनडीए के
+              कर्मठ उम्मीदवारों को विजयी बनाने के लिए मेरे परिवारजनों में
+              अभूतपूर्व उत्साह है।
+            </div>
+            <div class="pt-3 pb-2">
+              <img
+                src="https://pbs.twimg.com/media/GKo4SEyXIAEPEul?format=jpg&name=360x360"
+                alt="..."
+                class="w-auto xsm:min-w-full xsm:max-w-full rounded-2xl object-cover"
+              />
+            </div>
+            <div
+              class="flex justify-between leading-3 text-gray-500 items-center mb-1 text-xs xsm:text-sm"
+            >
+              <div
+                class="flex items-center hover:text-[#2099eb] cursor-pointer"
+              >
+                <span
+                  class="material-symbols-outlined xsm:p-2 rounded-full hover:bg-[#2099eb30] hover:text-[#2099eb]"
+                  style="font-size: 20px"
+                >
+                  mode_comment </span
+                >1.5k
+              </div>
+              <div
+                class="flex items-center hover:text-[#00ba7c] cursor-pointer"
+              >
+                <span
+                  class="material-symbols-outlined xsm:p-2 rounded-full hover:bg-[#00ba7c30] hover:text-[#00ba7c]"
+                  style="font-size: 20px"
+                >
+                  cached </span
+                >5.4k
+              </div>
+              <div
+                class="flex items-center hover:text-[#f91880] cursor-pointer"
+              >
+                <span
+                  class="material-symbols-outlined xsm:p-2 rounded-full hover:bg-[#f9188030] hover:text-[#f91880]"
+                  style="font-size: 20px"
+                >
+                  favorite </span
+                >12.4k
+              </div>
+              <div
+                class="flex items-center hover:text-[#2099eb] cursor-pointer"
+              >
+                <span
+                  class="material-symbols-outlined xsm:p-2 rounded-full hover:bg-[#2099eb30] hover:text-[#2099eb]"
+                  style="font-size: 20px"
+                >
+                  bar_chart_4_bars </span
+                >109.3k
+              </div>
+              <div class="flex items-center">
+                <span
+                  class="material-symbols-outlined xsm:p-2 rounded-full hover:bg-[#2099eb30] hover:text-[#2099eb] cursor-pointer"
+                  style="font-size: 20px"
+                >
+                  bookmark
+                </span>
+                <span
+                  class="material-symbols-outlined xsm:p-2 rounded-full hover:bg-[#2099eb30] hover:text-[#2099eb] cursor-pointer"
+                  style="font-size: 22px"
+                >
+                  upload
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- third panel -->
+      <div
+        class="third hidden lg:block max-w-sm sticky top-0 px-6 h-screen syncScroll1"
+      >
+        <!-- search bar -->
+        <div class="bg-black w-full py-1">
+          <input
+            type="text"
+            class="rounded-full px-4 py-2 w-full bg-[#16181c] text-white me-2"
+            placeholder="Search"
+          />
+        </div>
+
+        <div
+          class="flex flex-col h-full overflow-y-scroll sticky syncScroll2"
+          style="-ms-overflow-style: none; scrollbar-width: none"
+        >
+          <div class="bg-[#16181c] mt-3 mb-1 rounded-2xl">
+            <p class="text-xl font-bold px-4">What's happening</p>
+            <div class="mt-3 hover:bg-gray-800 p-3 flex">
+              <div>
+                <img
+                  class="w-20 h-20 object-cover rounded-xl"
+                  src="https://pbs.twimg.com/semantic_core_img/1776294236423335936/DChaJopm?format=jpg&name=240x240"
+                  alt="..."
+                />
+              </div>
+              <div class="ms-3">
+                <div class="font-bold">WrestleMania XL</div>
+                <div class="text-sm text-gray-500">Wrestling · LIVE</div>
+              </div>
+            </div>
+            <div
+              class="item p-3 hover:bg-gray-800 cursor-pointer px-4 flex items-start justify-between"
+            >
+              <div>
+                <div class="text-sm text-gray-500">Trending in India</div>
+                <div class="font-bold">#Orry</div>
+                <div class="text-sm text-gray-500">40.2k Posts</div>
+              </div>
+              <div>
+                <span
+                  class="material-symbols-outlined text-gray-500 ms-4 rounded-full p-1 hover:bg-[#1d9bf015] hover:text-[#2099eb]"
+                >
+                  more_horiz
+                </span>
+              </div>
+            </div>
+            <div
+              class="item p-3 hover:bg-gray-800 cursor-pointer px-4 flex items-start justify-between"
+            >
+              <div>
+                <div class="text-sm text-gray-500">Sports · Trending</div>
+                <div class="font-bold">Bumrah</div>
+                <div class="text-sm text-gray-500">
+                  Trending with
+                  <span class="text-blue-400 text-xs">Mumbai Indians</span
+                  ><em class="font-semibold text-base text-white ps-1">, </em
+                  ><span class="text-blue-400 text-xs">Delhi Capitals</span>
+                </div>
+              </div>
+              <div>
+                <span
+                  class="material-symbols-outlined text-gray-500 ms-4 rounded-full p-1 hover:bg-[#1d9bf015] hover:text-[#2099eb]"
+                >
+                  more_horiz
+                </span>
+              </div>
+            </div>
+            <div
+              class="item p-3 hover:bg-gray-800 cursor-pointer px-4 flex items-start justify-between"
+            >
+              <div>
+                <div class="text-sm text-gray-500">Sports · Trending</div>
+                <div class="font-bold">Iron Man 4</div>
+                <div class="text-sm text-gray-500">
+                  Trending with
+                  <span class="text-blue-400 text-xs">Disney</span
+                  ><em class="font-semibold text-base text-white ps-1">, </em
+                  ><span class="text-blue-400 text-xs">Marvel Universe</span>
+                </div>
+              </div>
+              <div>
+                <span
+                  class="material-symbols-outlined text-gray-500 ms-4 rounded-full p-1 hover:bg-[#1d9bf015] hover:text-[#2099eb]"
+                >
+                  more_horiz
+                </span>
+              </div>
+            </div>
+            <div
+              class="item p-3 hover:bg-gray-800 cursor-pointer px-4 flex items-start justify-between"
+            >
+              <div>
+                <div class="text-sm text-gray-500">Trending in India</div>
+                <div class="font-bold">#कांग्रेस_हटाओ_राजपुत_बचाओ</div>
+                <div class="text-sm text-gray-500">70.2k Posts</div>
+              </div>
+              <div>
+                <span
+                  class="material-symbols-outlined text-gray-500 ms-4 rounded-full p-1 hover:bg-[#1d9bf015] hover:text-[#2099eb]"
+                >
+                  more_horiz
+                </span>
+              </div>
+            </div>
+            <div
+              class="px-4 hover:bg-gray-800 rounded-b-2xl py-3 font-light text-blue-400"
+            >
+              Show more
+            </div>
+          </div>
+
+          <div class="bg-[#16181c] mt-4 rounded-2xl">
+            <p class="text-xl font-bold px-4">Who to follow</p>
+            <div
+              class="item p-3 hover:bg-gray-800 cursor-pointer px-4 flex items-center justify-between"
+            >
+              <div class="flex">
+                <div>
+                  <img
+                    class="w-12 h-12 object-cover rounded-full"
+                    src="https://pbs.twimg.com/semantic_core_img/1776294236423335936/DChaJopm?format=jpg&name=240x240"
+                    alt="..."
+                  />
+                </div>
+                <div class="ms-1">
+                  <div class="font-bold flex items-center">
+                    <span class="hover:underline">PlayStation</span>
+                    <span
+                      class="material-symbols-outlined text-blue-500 ms-[3px]"
+                      style="font-size: 20px"
+                    >
+                      verified
+                    </span>
+                  </div>
+                  <div class="text-sm text-gray-500">@PlayStation</div>
+                </div>
+              </div>
+              <div
+                class="border py-1 px-3 rounded-full text-[#3E4164] bg-white font-semibold"
+              >
+                Follow
+              </div>
+            </div>
+            <div
+              class="item p-3 hover:bg-gray-800 cursor-pointer px-4 flex items-center justify-between"
+            >
+              <div class="flex">
+                <div>
+                  <img
+                    class="w-12 h-12 object-cover rounded-full"
+                    src="https://pbs.twimg.com/profile_images/1134090740592627712/0Fp-U5-p_bigger.png"
+                    alt="..."
+                  />
+                </div>
+                <div class="ms-1">
+                  <div class="font-bold flex items-center">
+                    <span class="hover:underline">PMO India</span>
+                    <span
+                      class="material-symbols-outlined text-blue-500 ms-[3px]"
+                      style="font-size: 20px"
+                    >
+                      verified
+                    </span>
+                  </div>
+                  <div class="text-sm text-gray-500">@PMOIndia</div>
+                </div>
+              </div>
+              <div
+                class="border py-1 px-3 rounded-full text-[#3E4164] bg-white font-semibold"
+              >
+                Follow
+              </div>
+            </div>
+            <div
+              class="item p-3 hover:bg-gray-800 cursor-pointer px-4 flex items-center justify-between"
+            >
+              <div class="flex">
+                <div>
+                  <img
+                    class="w-12 h-12 object-cover rounded-full"
+                    src="https://pbs.twimg.com/profile_images/1693882638489264128/tw6YT_5B_200x200.jpg"
+                    alt="..."
+                  />
+                </div>
+                <div class="ms-1">
+                  <div class="font-bold flex items-center">
+                    <span class="hover:underline">Yogi Adityanath</span>
+                    <span
+                      class="material-symbols-outlined text-blue-500 ms-[3px]"
+                      style="font-size: 20px"
+                    >
+                      verified
+                    </span>
+                  </div>
+                  <div class="text-sm text-gray-500">@myogiadityanath</div>
+                </div>
+              </div>
+              <div
+                class="border py-1 px-3 rounded-full text-[#3E4164] bg-white font-semibold"
+              >
+                Follow
+              </div>
+            </div>
+            <div
+              class="px-4 hover:bg-gray-800 py-3 font-light text-blue-400 rounded-b-2xl"
+            >
+              Show more
+            </div>
+          </div>
+
+          <div class="terms text-sm text-gray-500 px-3 mt-4 min-h-28">
+            <span class="hover:underline cursor-pointer mr-2"
+              >Terms of Service</span
+            >
+            <span class="hover:underline cursor-pointer mr-2"
+              >Privacy Policy</span
+            >
+            <span class="hover:underline cursor-pointer mr-2"
+              >Cookie Policy</span
+            >
+            <span class="hover:underline cursor-pointer mr-2"
+              >Accessibility</span
+            >
+            <span class="hover:underline cursor-pointer mr-2">Ads info</span>
+            <span class="hover:underline cursor-pointer mr-2">More</span>
+            <span class="hover:underline cursor-pointer mr-2"
+              >© 2024 X Corp.</span
+            >
+          </div>
+          <div></div>
+          <div class="py-4"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- post button for mobile version -->
+    <button
+      class="xsm:hidden bg-[#1d9bf0] p-3 rounded-full text-white leading-3 fixed bottom-14 right-2"
+    >
+      <span class="material-symbols-outlined" style="font-size: 30px">
+        edit
+      </span>
+    </button>
+
+    <!-- scroll feature in nav -->
+    <script>
+      const addScroll = () => {
+        const element = document.querySelector(".first");
+        if (element.clientHeight < 810 && element.clientHeight > 60) {
+          element.classList.add("overflow-y-scroll");
+        } else {
+          element.classList.remove("overflow-y-scroll");
+        }
+      };
+      addScroll();
+      window.addEventListener("resize", addScroll);
+    </script>
+  </body>
+</html>

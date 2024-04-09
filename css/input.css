@@ -1,0 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.material-symbols-outlined {
+  font-size: 40px; /* Change this value to adjust the size */
+}
